@@ -1,4 +1,4 @@
-name: انتقال فایل به گیت هاب
+name: Download File With GitHub
 
 on:
   workflow_dispatch:
