@@ -13,21 +13,6 @@ on:
         required: false
         type: string
         default: ''
-      file_url_3:
-        description: 'لینک ۳ (اختیاری)'
-        required: false
-        type: string
-        default: ''
-      file_url_4:
-        description: 'لینک ۴ (اختیاری)'
-        required: false
-        type: string
-        default: ''
-      file_url_5:
-        description: 'لینک ۵ (اختیاری)'
-        required: false
-        type: string
-        default: ''
       zip_password:
         description: '🔒 تعیین رمز برای فایل آرشیو'
         required: false
@@ -44,7 +29,7 @@ on:
           - '50  (متوسط)'
           - '95  (حداکثر - برای فایل‌های حجیم)'
       delete_old_archives:
-        description: 'پاک کردن فایل‌های قبلی (در صورت تیک زدن، تمام آرشیوهای قدیمی حذف میشن)'
+        description: 'پاک کردن همه ی فایل های قدیمی دانلود شده'
         required: false
         type: boolean
         default: false
@@ -128,7 +113,7 @@ jobs:
               FILENAME_EXT=""
             fi
 
-            PREFIX="sci-hub.ir"
+            PREFIX="MrSezar"
 
             if [ "$total" -gt 1 ]; then
               NUM=$(printf '%02d' $counter)
@@ -285,7 +270,7 @@ jobs:
           | وضعیت | ✅ موفق |
 
            ---
-          ## تقدیم به همه آن‌هایی که راهی جز عبور ندارند. - [حسین بلنج](https://balanj.ir)
+          ## تقدیم به همه آن‌هایی که راهی جز عبور ندارند.
                    
           </div>
           EOF
